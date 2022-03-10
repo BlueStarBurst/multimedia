@@ -3,6 +3,7 @@ import CustomCard from "./card"
 import im1 from "../assets/drawings/1.png"
 import cant from "../assets/img/canterbury.jpg"
 import anglo from "../assets/img/anglo.jpg"
+import beo from "../assets/img/beo.jpg"
 
 import Header from "./header"
 import { OverlayTrigger, Popover, Tooltip } from "react-bootstrap"
@@ -39,7 +40,12 @@ export default function Home(props) {
 
             <CustomCard src={im1}>
                 <h3>A New Language</h3>
-                <p>The beloved Modern English one sees today is the culmination of many different aspects of the people inhabiting England.</p>
+                <p>The beloved Modern English one sees today is the culmination of many different aspects of the people inhabiting England, the most influential being the Norman presence in England.</p>
+            </CustomCard>
+
+            <CustomCard dir={"row"}>
+            <img onClick={handleClick} className="cardImg" src={beo} style={{ width: "50%" }}></img>
+                <p className="side">Old English compared to Modern English (<i>Beowulf</i>).</p>
             </CustomCard>
 
             <CustomCard src={im1}>

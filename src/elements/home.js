@@ -3,6 +3,7 @@ import CustomCard from "./card"
 import im1 from "../assets/drawings/1.png"
 import cant from "../assets/img/canterbury.jpg"
 import anglo from "../assets/img/anglo.jpg"
+import anglo2 from "../assets/img/anglo2.png"
 
 import Header from "./header"
 import { OverlayTrigger, Popover, Tooltip } from "react-bootstrap"
@@ -61,8 +62,13 @@ export default function Home(props) {
             </CustomCard>
 
             <CustomCard dir={"row"}>
+                <img onClick={handleClick} className="cardImg" src={anglo2} style={{ width: "50%" }}></img>
+                <p className="side">A depiction of the arrival of the Anglo-Saxons in England (Ellis).</p>
+            </CustomCard>
+
+            <CustomCard dir={"row"}>
                 <img onClick={handleClick} className="cardImg" src={anglo} style={{ width: "50%" }}></img>
-                <p className="side">The Anglo-Saxon depiction of the British Isles. Anglo-Saxon Mappa Mundi, 1025-1050</p>
+                <p className="side">The Anglo-Saxon depiction of the British Isles (The British Library). Anglo-Saxon Mappa Mundi, 1025-1050</p>
             </CustomCard>
 
             <CustomCard src={im1}>
