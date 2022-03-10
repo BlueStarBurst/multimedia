@@ -7,7 +7,7 @@ export default function Header(props) {
             top: 0,
             behavior: 'smooth'
         })
-        window.location = "/"
+        window.location = "/multimedia"
     }
 
     if (props.static) {
