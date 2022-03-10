@@ -45,7 +45,7 @@ function App(props) {
 
     return (
         <div className='body'>
-            <Header />
+
             {currentPage}
         </div>
     )

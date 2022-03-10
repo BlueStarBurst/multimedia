@@ -2,6 +2,20 @@ import React, { useRef, useState, useEffect } from "react"
 
 export default function Header(props) {
 
+    function handleClick(e) {
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+        window.location = "/"
+    }
+
+    if (props.static) {
+        return(<div className="header">
+            <h1 onClick={handleClick}>Old English</h1>
+        </div>)
+    }
+
     const { scrollX, scrollY } = useWindowScrollPositions()
 
     const head = useRef(null)
@@ -17,8 +31,10 @@ export default function Header(props) {
         }
     }, [scrollY, head?.current])
 
+    
+
     return (<div ref={head} className="header">
-        <h1>Old English</h1>
+        <h1 onClick={handleClick}>Old English</h1>
     </div>)
 }
 
