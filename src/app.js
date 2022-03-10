@@ -59,6 +59,7 @@ render((
                 <Route path="/" element={<App location='home' />} />
                 <Route path="/multimedia" element={<App location='home' />} />
                 <Route path="/sources" element={<App location='sources' />} />
+                <Route path="/multimedia/sources" element={<App location='sources' />} />
                 <Route path="*" element={<App location='error' />} />
                 {/* <Route path="/details" component={Details} /> */}
             </Routes>
