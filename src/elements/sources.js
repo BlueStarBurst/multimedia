@@ -1,4 +1,5 @@
 import React from "react"
+import { Button } from "react-bootstrap"
 import CustomCard from "./card"
 import Footer from "./footer"
 import Header from "./header"
@@ -18,7 +19,16 @@ export default function Sources(props) {
             </p>
             <p>The British Library. Anglo-Saxon Mappa Mundi, 1025-1050 (2018). <a target="_blank" href="https://www.bl.uk/collection-items/beowulf">Web</a>.</p>
             <p>The British Library. Beowulf (2014). <a target="_blank" href="http://www.bl.uk/onlinegallery/onlineex/unvbrit/a/001cottibb00005u00056v00.html">Print</a>.</p>
-
+            <br></br>
+            <h2>Additional Material</h2>
+            <br></br>
+            <div style={{display: "flex", gap: "1%", width: "100%", overflowX: "scroll"}}>
+                <Button variant="secondary" target="_blank" href="https://www.bl.uk/medieval-english-french-manuscripts/articles/old-english-after-the-norman-conquest"> Old English After the Norman Conquest </Button>
+                <Button variant="secondary" target="_blank" href="https://www.britannica.com/place/United-Kingdom/Anglo-Saxon-England"> Anglo-Saxon England </Button>
+                <Button variant="secondary" target="_blank" href="https://scholarworks.harding.edu/cgi/viewcontent.cgi?article=1060&context=tenor"> Norman Influence on England </Button>
+                <Button variant="secondary" target="_blank" href="https://www.britishmuseum.org/learn/schools/ages-7-11/ancient-britain/visit-resource-anglo-saxons"> British Museum </Button>
+            </div>
+    
         </div>
         <Footer/>
     </>)
