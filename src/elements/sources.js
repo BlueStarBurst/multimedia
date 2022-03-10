@@ -22,7 +22,7 @@ export default function Sources(props) {
             <br></br>
             <h2>Additional Material</h2>
             <br></br>
-            <div style={{display: "flex", gap: "1%", width: "100%", overflowX: "scroll"}}>
+            <div style={{display: "flex", gap: "1%", width: "100%", overflowX: "auto"}}>
                 <Button variant="secondary" target="_blank" href="https://www.bl.uk/medieval-english-french-manuscripts/articles/old-english-after-the-norman-conquest"> Old English After the Norman Conquest </Button>
                 <Button variant="secondary" target="_blank" href="https://www.britannica.com/place/United-Kingdom/Anglo-Saxon-England"> Anglo-Saxon England </Button>
                 <Button variant="secondary" target="_blank" href="https://scholarworks.harding.edu/cgi/viewcontent.cgi?article=1060&context=tenor"> Norman Influence on England </Button>
