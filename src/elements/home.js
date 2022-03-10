@@ -53,7 +53,7 @@ export default function Home(props) {
 
             <CustomCard dir={"row"}>
                 <img onClick={handleClick} className="cardImg" src={anglo} style={{ width: "50%" }}></img>
-                <p className="side">&emsp;The Anglo-Saxon depiction of the British Isles. Anglo-Saxon Mappa Mundi, 1025-1050</p>
+                <p className="side">The Anglo-Saxon depiction of the British Isles. Anglo-Saxon Mappa Mundi, 1025-1050</p>
             </CustomCard>
 
             <CustomCard src={im1}>
@@ -75,7 +75,7 @@ export default function Home(props) {
 
             <CustomCard dir={"row"}>
                 <img onClick={handleClick} className="cardImg" src={cant} style={{ width: "50%" }}></img>
-                <p className="side">&emsp;This work is the <i>Canterbury Tales</i> by Geoffrey Chaucer. It was a famous works following the creation of Modern English and this along with his other works lead to the revival of the English language (Crystal).</p>
+                <p className="side">This work is the <i>Canterbury Tales</i> by Geoffrey Chaucer. It was a famous works following the creation of Modern English and this along with his other works lead to the revival of the English language (Crystal).</p>
             </CustomCard>
 
             
