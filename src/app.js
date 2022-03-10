@@ -41,7 +41,7 @@ function App(props) {
                 // setCurrentPage(<Error />);
                 // break
             default:
-                setCurrentPage(<Navigate to="/" />)
+                setCurrentPage(<Navigate to="/multimedia" />)
         }
     }, [props]);
 
