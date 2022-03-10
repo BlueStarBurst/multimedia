@@ -40,7 +40,7 @@ function createCopy(pathW = '') {
 module.exports = [
     createCopy(),
     createCopy('/error'),
-    createCopy('/stuff'),
+    createCopy('/sources'),
 ];
 
 // const rendererConfig = lodash.cloneDeep(commonConfig);
