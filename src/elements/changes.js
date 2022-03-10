@@ -3,7 +3,8 @@ import CustomCard from "./card"
 import im1 from "../assets/drawings/1.png"
 import cant from "../assets/img/canterbury.jpg"
 import anglo from "../assets/img/anglo.jpg"
-import beo from "../assets/img/beo.jpg"
+import beo2 from "../assets/img/beo2.jpg"
+import beo3 from "../assets/img/beo3.png"
 
 import Header from "./header"
 import { OverlayTrigger, Popover, Tooltip } from "react-bootstrap"
@@ -43,9 +44,10 @@ export default function Home(props) {
                 <p>The beloved Modern English one sees today is the culmination of many different aspects of the people inhabiting England, the most influential being the Norman presence in England.</p>
             </CustomCard>
 
-            <CustomCard dir={"row"}>
-            <img onClick={handleClick} className="cardImg" src={beo} style={{ width: "50%" }}></img>
-                <p className="side">Old English compared to Modern English (<i>Beowulf</i>).</p>
+            <CustomCard dir={"row"} wide>
+            <img onClick={handleClick} className="cardImg" src={beo2} style={{ width: "48%" }}></img>
+            <img onClick={handleClick} className="cardImg" src={beo3} style={{ width: "48%" }}></img>
+                <p className="side">Old English compared to Modern English (<i>The British Library and MIT</i>).</p>
             </CustomCard>
 
             <CustomCard src={im1}>

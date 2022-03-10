@@ -61,7 +61,7 @@ export default function Home(props) {
                 </OverlayTrigger> Invaded Anglo-Saxon England, establishing a radical new way of life for the English society. This completely changed the culture and ideology of this land going so far as to change the language from Old English to French.</p>
             </CustomCard>
 
-            <CustomCard dir={"row"}>
+            <CustomCard dir={"row"} wide>
                 <img onClick={handleClick} className="cardImg" src={anglo2} style={{ width: "50%" }}></img>
                 <p className="side">A depiction of the arrival of the Anglo-Saxons in England (Ellis).</p>
             </CustomCard>

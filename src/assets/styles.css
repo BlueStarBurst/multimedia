@@ -171,6 +171,11 @@ h1 {
   top: 0;
 }
 
+.wide {
+  width: 80%;
+  max-width: 100%;
+}
+
 .page {
   padding: 10rem 10rem 35vh 10rem;
   margin-top: 25vh;
@@ -319,6 +324,7 @@ h1 {
     max-width: 100%;
     overflow-wrap: normal;
     flex-wrap: wrap;
+    margin-top: 45vh;
   }
 
   .page {
@@ -340,10 +346,10 @@ h1 {
     width: 100% !important;
   }
 
-  .header {
-    /* background-color: black; */
+  .header-main {
+    transform: translateY(40vh);
+    transition: all 1s;
   }
-
   .side {
     width: 100% !important;
   }
