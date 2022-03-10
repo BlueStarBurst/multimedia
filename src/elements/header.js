@@ -4,15 +4,33 @@ export default function Header(props) {
 
     function handleClick(e) {
         document.documentElement.scrollTo({
-            top: 0,
+            top: 1,
             behavior: 'smooth'
         })
-        window.location = "/multimedia"
+        setTimeout(() => {
+            window.location = "/multimedia/";
+        }, 500)
+    }
+
+    function redir(e, name = "") {
+        document.documentElement.scrollTo({
+            top: 1,
+            behavior: 'smooth'
+        })
+        setTimeout(() => {
+            window.location = "/multimedia/" + name;
+        }, 1000)
     }
 
     if (props.static) {
-        return(<div className="header">
+        return (<div className="header">
+            <div className="div1" onClick={(e) => { redir(e, "changes") }}>
+                <p>changes</p>
+            </div>
             <h1 onClick={handleClick}>Old English</h1>
+            <div className="div2" onClick={(e) => { redir(e, "sources") }}>
+                <p>sources</p>
+            </div>
         </div>)
     }
 
@@ -31,10 +49,16 @@ export default function Header(props) {
         }
     }, [scrollY, head?.current])
 
-    
+
 
     return (<div ref={head} className="header">
+        <div className="div1" onClick={(e) => { redir(e, "changes") }}>
+            <p>changes</p>
+        </div>
         <h1 onClick={handleClick}>Old English</h1>
+        <div className="div2" onClick={(e) => { redir(e, "sources") }}>
+            <p>sources</p>
+        </div>
     </div>)
 }
 

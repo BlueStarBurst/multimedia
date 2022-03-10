@@ -6,11 +6,20 @@ import anglo from "../assets/img/anglo.jpg"
 
 import Header from "./header"
 import { OverlayTrigger, Popover, Tooltip } from "react-bootstrap"
+import Footer from "./footer"
 
 export default function Home(props) {
 
     const focImg = useRef(null)
     const focImageSrc = useRef(null)
+
+    function redir(e, name = "") {
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+        window.location = "/multimedia/" + name;
+    }
 
     function handleClick(e, fix = false) {
         console.log(fix)
@@ -81,11 +90,11 @@ export default function Home(props) {
             <CustomCard src={im1}>
                 <h3>Revival of English</h3>
                 <p>
-                    Geoffrey Chaucer inspired a movement of English literature and inevitably cemented the foundation of this settling English language. This new language was essentially an amalgamation of languages, slang, and even the whims of artists creating a drastically different look and sound than the previous Old English language. 
+                    Geoffrey Chaucer inspired a movement of English literature and inevitably cemented the foundation of this settling English language. This new language was essentially an amalgamation of languages, slang, and even the whims of artists creating a drastically different look and sound than the previous Old English language.
                 </p>
             </CustomCard>
 
         </div>
-        <p style={{ color: "white", backgroundColor: "black", marginBottom: "0", width: "100vw" }}></p>
+        <Footer />
     </>)
 }

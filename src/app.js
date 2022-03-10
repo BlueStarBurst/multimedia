@@ -20,6 +20,7 @@ import Header from "./elements/header";
 import Home from "./elements/home";
 import Error from "./elements/error";
 import Sources from "./elements/sources";
+import Changes from "./elements/changes";
 
 // import Details from "./elements/Details";
 
@@ -37,9 +38,12 @@ function App(props) {
             case 'sources':
                 setCurrentPage(<Sources />);
                 break;
+            case 'changes':
+                setCurrentPage(<Changes />);
+                break;
             case 'error':
-                // setCurrentPage(<Error />);
-                // break
+            // setCurrentPage(<Error />);
+            // break
             default:
                 setCurrentPage(<Navigate to="/multimedia" />)
         }
@@ -60,6 +64,8 @@ render((
                 <Route path="/multimedia" element={<App location='home' />} />
                 <Route path="/sources" element={<App location='sources' />} />
                 <Route path="/multimedia/sources" element={<App location='sources' />} />
+                <Route path="/changes" element={<App location='changes' />} />
+                <Route path="/multimedia/changes" element={<App location='changes' />} />
                 <Route path="*" element={<App location='error' />} />
                 {/* <Route path="/details" component={Details} /> */}
             </Routes>

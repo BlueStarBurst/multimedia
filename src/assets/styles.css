@@ -71,49 +71,108 @@ h1 {
 .header {
   position: fixed;
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
   /* background-color: white; */
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   padding: 1rem;
   top: 0;
   transition: all 1s;
   z-index: 1000;
 }
 
-.header h1 {
-  transition: all 1s;
+.div1 {
+  text-align: right;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 1vw;
 }
 
-.header *:hover {
+.header p {
+  width: auto;
+}
+
+.div2 {
+  text-align: right;
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 1vw;
+}
+
+.header div {
+  width: min-content;
+  transition: all 2s;
+}
+
+.header h1 {
+  transition: all 1s;
+  width: 100%;
+  word-wrap: none;
+  word-break: keep-all;
+  text-overflow: clip;
+  text-align: center;
+}
+
+.header h1:hover {
+  cursor: pointer;
+}
+
+.header p:hover {
   cursor: pointer;
 }
 
 .header-main {
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  min-width: 100%;
+  width: min-content;
+  padding: 1rem;
+  top: 0;
+  transition: all 1s;
+  z-index: 1000;
   transform: translateY(47vh);
   transition: all 1s;
+  display: flex;
+  word-wrap: none;
+  word-break: keep-all;
+  text-overflow: clip;
+  text-align: center;
 }
 
-.header-main *:hover {
+.header-main div {
+  opacity: 0;
+  transition: all 1s;
+  width: auto;
+  justify-content: center;
+}
+
+.header-main h1:hover {
   cursor: pointer;
 }
 
 .header-main h1 {
+  width: 100%;
+  text-align: center;
   font-size: 300%;
   transition: all 1s;
 }
 
 .body {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   overflow-x: hidden;
+  top: 0;
 }
 
 .page {
-  padding: 10rem 10rem 10rem 10rem;
+  padding: 10rem 10rem 35vh 10rem;
   margin-top: 25vh;
   /* height: 200vh; */
   /* background-color: blue; */
@@ -139,11 +198,27 @@ h1 {
   /* word-break: keep-all; */
   /* word-wrap: break-word; */
   overflow-wrap: break-word;
+  animation: fadeIn 1s;
 }
 
 .sources p {
-  padding-left: 44px ;
-  text-indent: -44px ;
+  padding-left: 44px;
+  text-indent: -44px;
+}
+
+.foot {
+  padding: 2rem;
+  background-color: rgba(65, 65, 65, 0.822);
+  width: 100%;
+  margin-bottom: 0;
+  z-index: 1000000;
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+
+.foot p:hover {
+  cursor: pointer;
 }
 
 .page:last-child {
@@ -151,7 +226,6 @@ h1 {
   /* margin-bottom: 0; */
   /* opacity: 1 !important; */
   /* background-color: black; */
-  
 }
 
 .focusedImage {
@@ -225,6 +299,15 @@ h1 {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-device-width: 600px) {
   html {
     font-size: 300%;
@@ -242,6 +325,17 @@ h1 {
     padding: 1rem 1rem 0 1rem;
     width: 100vw;
   }
+
+  .sources {
+    padding: 4rem 1rem 0 1rem;
+    width: 100vw;
+  }
+
+  .sources p {
+    
+    width: 100%;
+  }
+
   .cardImg {
     width: 100% !important;
   }

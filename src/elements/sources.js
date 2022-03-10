@@ -1,5 +1,6 @@
 import React from "react"
 import CustomCard from "./card"
+import Footer from "./footer"
 import Header from "./header"
 
 export default function Sources(props) {
@@ -14,5 +15,6 @@ export default function Sources(props) {
             </p>
             <p>The British Library. Anglo-Saxon Mappa Mundi, 1025-1050 (2018). Web.</p>
         </div>
+        <Footer/>
     </>)
 }

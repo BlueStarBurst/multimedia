@@ -44,7 +44,7 @@ export default function CustomCard(props) {
     }, [scrollY, cardRef?.current])
 
     return (
-        <div className="custom-card" ref={cardRef} style={(props.dir) ? { flexDirection: props.dir, display: "flex", gap: "4%", alignItems: "center", verticalAlign: "middle" } : null}>
+        <div className="custom-card" ref={cardRef} style={(props.dir) ? { flexDirection: props.dir, display: "flex", gap: "4%", alignItems: "center", verticalAlign: "middle" } : (props.style || {})}>
             {props.children}
             {(props.src) ? <div className="over">
                 <img ref={imgRef1} src={props.src}></img>
