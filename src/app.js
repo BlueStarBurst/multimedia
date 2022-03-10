@@ -27,6 +27,8 @@ import Sources from "./elements/sources";
 function App(props) {
     const [currentPage, setCurrentPage] = useState(<Home />)
 
+    console.log(props.path);
+
     useEffect(() => {
         switch (props.location) {
             case 'home':
@@ -36,8 +38,8 @@ function App(props) {
                 setCurrentPage(<Sources />);
                 break;
             case 'error':
-                setCurrentPage(<Error />);
-                break;
+                // setCurrentPage(<Error />);
+                // break
             default:
                 setCurrentPage(<Navigate to="/" />)
         }
@@ -45,7 +47,6 @@ function App(props) {
 
     return (
         <div className='body'>
-
             {currentPage}
         </div>
     )
