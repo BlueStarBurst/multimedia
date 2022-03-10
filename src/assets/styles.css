@@ -1,0 +1,135 @@
+@font-face {
+  font-family: OldEnglish;
+  src: url("./OLDENGL.TTF");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: OldEnglish;
+}
+
+.custom-card {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 70vh;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  width: 100%;
+  padding: 1rem;
+  top: 0;
+  transition: all 1s;
+}
+
+.header h1 {
+  transition: all 1s;
+}
+
+.header-main {
+  transform: translateY(47vh);
+  transition: all 1s;
+}
+
+.header-main h1 {
+  font-size: 300%;
+  transition: all 1s;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.page {
+  padding: 10rem;
+  margin-top: 25vh;
+  /* height: 200vh; */
+  /* background-color: blue; */
+  width: 100%;
+  min-width: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.page:last-child {
+  margin-bottom: 85vh;
+}
+
+.mainBack {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(78, 108, 116);
+  color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.back {
+  padding: 4% 30%;
+  height: auto;
+  background-color: rgb(78, 108, 116);
+  color: rgb(235, 235, 235);
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashing {
+  font-weight: 900;
+  font-size: 200rem;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  html {
+    font-size: 300%;
+    /* background-color: black; */
+  }
+
+  .custom-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page {
+    padding: 1rem;
+    width: 100vw;
+  }
+
+  .header {
+    /* background-color: black; */
+  }
+}
