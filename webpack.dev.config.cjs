@@ -40,6 +40,7 @@ function createCopy(pathW = '') {
 module.exports = [
     createCopy(),
     createCopy('/error'),
+    createCopy('/changes'),
     createCopy('/sources'),
 ];
 
