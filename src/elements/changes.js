@@ -34,28 +34,36 @@ export default function Home(props) {
 
     return (<>
         <Header static />
-        <div className="page" onClick={(e) => { handleClick(e, true) }}>
+        <div className="page" onClick={(e) => { handleClick(e, true) }} style={{paddingTop: "10vh"}} >
             <div className="focusedImage" ref={focImg}>
                 <img id="foc" ref={focImageSrc} ></img>
             </div>
 
-            <CustomCard src={im1}>
+            <CustomCard src={im1} style={{marginTop: "5vh"}}>
                 <h3>A New Language</h3>
                 <p>The beloved Modern English one sees today is the culmination of many different aspects of the people inhabiting England, the most influential being the Norman presence in England.</p>
             </CustomCard>
 
             <CustomCard dir={"row"} wide>
-            <img onClick={handleClick} className="cardImg" src={beo2} style={{ width: "48%" }}></img>
-            <img onClick={handleClick} className="cardImg" src={beo3} style={{ width: "48%" }}></img>
+                <img onClick={handleClick} className="cardImg" src={beo2} style={{ width: "48%" }}></img>
+                <img onClick={handleClick} className="cardImg" src={beo3} style={{ width: "48%" }}></img>
                 <p className="side">Old English compared to Modern English (<i>The British Library and MIT</i>).</p>
             </CustomCard>
 
-            <CustomCard src={im1}>
+            <CustomCard src={im1} wide>
                 <h3 >Synonyms</h3>
                 <p>
                     Without a doubt, it is because of this French incorporation “English speakers can say that they are going to have a ‘drink’ (Anglo-Saxon origin) or a ‘beverage’ (Old French origin), or that they are going to ‘weep’ (Anglo-Saxon) or ‘cry’ (Old French)” which vastly expanded the new and flourishing language. In addition to these synonyms, entire new words were incorporated as well: “‘government’ is of French origin, as are the words ‘office,’ ‘city,’ ‘police,’ ‘tax,’ ‘jury,’ ‘attorney,’ and ‘prison.’” (Robinson 5)
                 </p>
             </CustomCard>
+
+            <CustomCard wide>
+                <h3 >Incorporation</h3>
+                <p>
+                    One prominent author of the time was Geoffrey Chaucer who created a modern King Arthur tale in this evolving language. Using a “deep knowledge of French”' Chaucer incorporated these Anglo-French ideas with the Middle English language, creating King Arthur (Bondar). This new piece of literature created a revolution of works and translations which ultimately restored the English language back to England whilst modernizing the language into the version of the English language that is seen today.
+                </p>
+            </CustomCard>
+
 
         </div>
         <Footer />

@@ -46,6 +46,17 @@ export default function Home(props) {
                 <img id="foc" ref={focImageSrc} ></img>
             </div>
 
+            <CustomCard src={im1} wide>
+                <h3>Context</h3>
+                <p>To contextualize the events that unfolded in the United Kingdom almost a millennium ago, the British Isles were inhabited by a group of people known as the Anglo-Saxons. The Anglo-Saxons were the first people to speak Old English and established “local governments” and order in England (Robinson). Unfortunately, like many aspects of life, this was temporary, bringing us to the Anglo-Saxons’ final major conflict. Normandy, a state that resided in modern Northern France, invaded the British Isle in the 12th century completely unbalancing the English supremacy in England. This major event inevitably paved the way for the greatest lingual and cultural impact in English history.</p>
+            </CustomCard>
+            
+
+            <CustomCard dir={"row"} wide>
+                <img onClick={handleClick} className="cardImg" src={anglo2} style={{ width: "50%" }}></img>
+                <p className="side">A depiction of the arrival of the Anglo-Saxons in England (Ellis).</p>
+            </CustomCard>
+
             <CustomCard src={im1}>
                 <h3>The Norman Invasion</h3>
                 <p>In 1066 <OverlayTrigger
@@ -59,11 +70,6 @@ export default function Home(props) {
                 >
                     <span style={{ color: "red" }}>{"William the Conqueror"}</span>
                 </OverlayTrigger> Invaded Anglo-Saxon England, establishing a radical new way of life for the English society. This completely changed the culture and ideology of this land going so far as to change the language from Old English to French.</p>
-            </CustomCard>
-
-            <CustomCard dir={"row"} wide>
-                <img onClick={handleClick} className="cardImg" src={anglo2} style={{ width: "50%" }}></img>
-                <p className="side">A depiction of the arrival of the Anglo-Saxons in England (Ellis).</p>
             </CustomCard>
 
             <CustomCard dir={"row"}>
@@ -96,7 +102,7 @@ export default function Home(props) {
             <CustomCard src={im1}>
                 <h3>Revival of English</h3>
                 <p>
-                    Geoffrey Chaucer inspired a movement of English literature and inevitably cemented the foundation of this settling English language. This new language was essentially an amalgamation of languages, slang, and even the whims of artists creating a drastically different look and sound than the previous Old English language.
+                    Geoffrey Chaucer inspired a movement of English literature and inevitably cemented the foundation of this settling English language. This new language was essentially an amalgamation of languages, slang, and even the whims of artists creating a drastically different look and sound than the previous Old English language. Check out the changes <a onClick={(e) => redir(e, "changes")} href="/">here</a>!
                 </p>
             </CustomCard>
 
