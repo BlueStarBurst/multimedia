@@ -48,7 +48,7 @@ export default function Home(props) {
                     )}
                 >
                     <span style={{ color: "red" }}>{"William the Conqueror"}</span>
-                </OverlayTrigger> Invaded Anglo-Saxon England, establishing a radical new way of life for the English society. This completely changed the culture and ideology of this land going so far as to change the religion from Old English to French.</p>
+                </OverlayTrigger> Invaded Anglo-Saxon England, establishing a radical new way of life for the English society. This completely changed the culture and ideology of this land going so far as to change the language from Old English to French.</p>
             </CustomCard>
 
             <CustomCard dir={"row"}>
@@ -78,9 +78,14 @@ export default function Home(props) {
                 <p className="side">This work is the <i>Canterbury Tales</i> by Geoffrey Chaucer. It was a famous works following the creation of Modern English and this along with his other works lead to the revival of the English language (Crystal).</p>
             </CustomCard>
 
-            
+            <CustomCard src={im1}>
+                <h3>Revival of English</h3>
+                <p>
+                    Geoffrey Chaucer inspired a movement of English literature and inevitably cemented the foundation of this settling English language. This new language was essentially an amalgamation of languages, slang, and even the whims of artists creating a drastically different look and sound than the previous Old English language. 
+                </p>
+            </CustomCard>
 
         </div>
-        <p style={{color: "white", backgroundColor: "black", marginBottom: "0", width: "100vw"}}></p>
+        <p style={{ color: "white", backgroundColor: "black", marginBottom: "0", width: "100vw" }}></p>
     </>)
 }
