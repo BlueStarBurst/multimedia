@@ -4,10 +4,10 @@ export default function Footer(props) {
 
     function handleClick(e) {
         document.documentElement.scrollTo({
-            top: 1,
+            top: 0,
             behavior: 'smooth'
         })
-        window.location = "/multimedia"
+        // window.location = "/multimedia"
     }
 
     function redir(e, name = "") {
@@ -26,7 +26,7 @@ export default function Footer(props) {
 
     return(
         <div className="foot" >
-            <p onClick={(e) => {redir(e)}} style={{marginBottom: "0"}}>
+            <p onClick={handleClick} style={{marginBottom: "0"}}>
                 back to top
             </p>
             <p onClick={(e) => {redir(e, "changes")}} style={{marginBottom: "0"}}>
